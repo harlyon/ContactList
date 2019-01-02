@@ -2,7 +2,13 @@ const graphql = require('graphql');
 const Name = require('../models/name');
 const Country = require('../models/country');
 
-const { GraphQLObjectType, GraphQLList, GraphQLID, GraphQLString, GraphQLInt, GraphQLSchema, GraphQLNonNull  } = graphql;
+const { GraphQLObjectType,
+        GraphQLList,
+        GraphQLID,
+        GraphQLString,
+        GraphQLInt,
+        GraphQLSchema,
+        GraphQLNonNull  } = graphql;
 
 const NameType = new GraphQLObjectType({
   name: 'Name',
